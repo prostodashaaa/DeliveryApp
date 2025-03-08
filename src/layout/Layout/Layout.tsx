@@ -27,7 +27,7 @@ export function Layout() {
       <div className={classNames(styles.leftPanel)}>
         <div className={classNames(styles.leftPanel__top)}>
           <div className={classNames(styles.leftPanel__user)}>
-            <img src="/User.png" alt="Фото пользователя" />
+            <img src="/DeliveryApp/User.png" alt="Фото пользователя" />
             <div className={classNames(styles.leftPanel__user_info)}>
               <h1 className={classNames(styles.leftPanel__user_name)}>
                 {profile?.name}
@@ -46,7 +46,7 @@ export function Layout() {
               }
               to="/"
             >
-              <img src="/Menu.svg" alt="Меню" /> Меню
+              <img src="/DeliveryApp/Menu.svg" alt="Меню" /> Меню
             </NavLink>
             <NavLink
               className={({ isActive }) =>
@@ -56,7 +56,7 @@ export function Layout() {
               }
               to="/cart"
             >
-              <img src="/Cart.svg" alt="Корзина" /> Корзина
+              <img src="/DeliveryApp/Cart.svg" alt="Корзина" /> Корзина
               <div className={classNames(styles["leftPanel__item-count"])}>
                 {items.reduce((acc, item) => (acc += item.count), 0)}
               </div>
@@ -67,7 +67,7 @@ export function Layout() {
           className={classNames(styles.leftPanel__button)}
           onClick={logout}
         >
-          <img src="/Logout.svg" alt="Выход" />
+          <img src="/DeliveryApp/Logout.svg" alt="Выход" />
           Выйти
         </Button>
       </div>
