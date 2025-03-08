@@ -6,6 +6,7 @@ export default defineConfig({
   base: "/DeliveryApp/",
   build: {
     outDir: "dist",
+    assetsDir: 'assets',
   },
   plugins: [react()],
 });
