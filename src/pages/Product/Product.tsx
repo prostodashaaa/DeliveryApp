@@ -13,12 +13,12 @@ export function Product() {
       <div className={classNames(styles.product__header)}>
         <div className={classNames(styles.header_left)}>
           <button className={classNames(styles.button_back)}>
-            <img src="/public/Back.svg" alt="Назад" />
+            <img src="/DeliveryApp/Back.svg" alt="Назад" />
           </button>
           <Title>{data.name}</Title>
         </div>
         <Button className={classNames(styles.button_add)}>
-          <img src="/public/CartButton.svg" alt="Добавить в корзину" />
+          <img src="/DeliveryApp/CartButton.svg" alt="Добавить в корзину" />
           {"В корзину"}
         </Button>
       </div>
@@ -38,7 +38,7 @@ export function Product() {
             <div className={classNames(styles.product__text)}>Рейтинг</div>
             <div className={classNames(styles.product__rating)}>
               {data.rating}
-              <img src="/public/Rating.svg" alt="Оценка" />
+              <img src="/DeliveryApp/Rating.svg" alt="Оценка" />
             </div>
           </div>
           <div className={classNames(styles.product__ingredients)}>

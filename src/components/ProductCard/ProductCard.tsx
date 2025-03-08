@@ -30,10 +30,10 @@ function ProductCard(props: ProductCardProps) {
         </div>
         <div className={classNames(styles["product-card__rating"])}>
           {props.rating}
-          <img src="/public/Rating.svg" alt="Оценка" />
+          <img src="/DeliveryApp/Rating.svg" alt="Оценка" />
         </div>
         <button className={classNames(styles["add-cart"])} onClick={add}>
-          <img src="/public/CartButton.svg" alt="Добавить в корзину" />
+          <img src="/DeliveryApp/CartButton.svg" alt="Добавить в корзину" />
         </button>
         <div className={classNames(styles["product-card__description"])}>
           <h2 className={classNames(styles["description__title"])}>

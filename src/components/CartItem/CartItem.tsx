@@ -52,7 +52,7 @@ function CartItem(props: CartItemProps) {
             className={classNames(styles.action__button, styles.minus)}
             onClick={descrease}
           >
-            <img src="/public/Minus.svg" alt="Удалить из корзины" />
+            <img src="/DeliveryApp/Minus.svg" alt="Удалить из корзины" />
           </button>
           <div className={classNames(styles["cart-item__count"])}>
             {props.count}
@@ -61,14 +61,14 @@ function CartItem(props: CartItemProps) {
             className={classNames(styles.action__button, styles.plus)}
             onClick={increase}
           >
-            <img src="/public/Plus.svg" alt="Добавить в корзину" />
+            <img src="/DeliveryApp/Plus.svg" alt="Добавить в корзину" />
           </button>
         </div>
         <button
           className={classNames(styles.action__button, styles.delete)}
           onClick={remove}
         >
-          <img src="/public/Remove.svg" alt="Удалить товар" />
+          <img src="/DeliveryApp/Remove.svg" alt="Удалить товар" />
         </button>
       </div>
     </div>

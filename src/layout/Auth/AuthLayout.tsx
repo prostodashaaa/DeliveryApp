@@ -6,7 +6,7 @@ export function AuthLayout() {
   return (
     <div className={classNames(styles.layout)}>
       <div className={classNames(styles.logo)}>
-        <img src="/public/Logo.svg" alt="Логотип" />
+        <img src="/DeliveryApp/Logo.svg" alt="Логотип" />
       </div>
       <div className={classNames(styles.content)}>
         <Outlet />

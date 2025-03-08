@@ -11,7 +11,7 @@ export function Success() {
     <>
       <div className={classNames(styles.success__section)}>
         <div className={classNames(styles.success__image)}>
-          <img src="/public/SuccessOrder.svg" alt="Заказ оформелен" />
+          <img src="/DeliveryApp/SuccessOrder.svg" alt="Заказ оформелен" />
         </div>
         <div className={classNames(styles.success__text)}>
           Ваш заказ успешно оформлен!
