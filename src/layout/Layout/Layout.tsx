@@ -27,7 +27,7 @@ export function Layout() {
       <div className={classNames(styles.leftPanel)}>
         <div className={classNames(styles.leftPanel__top)}>
           <div className={classNames(styles.leftPanel__user)}>
-            <img src="/User.png" alt="Фото пользователя" />
+            <img src="/assets/User.png" alt="Фото пользователя" />
             <div className={classNames(styles.leftPanel__user_info)}>
               <h1 className={classNames(styles.leftPanel__user_name)}>
                 {profile?.name}
