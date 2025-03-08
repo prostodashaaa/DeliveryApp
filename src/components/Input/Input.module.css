@@ -1,0 +1,25 @@
+.input {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 15px 20px 45px 0px #E9E9E940;
+
+  font-family: var(--font-family);
+  font-size: 17px;
+  line-height: 23.15px;
+
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.input::placeholder {
+  color: var(--placeholder);
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid var(--grey);
+}
+
+.invalid {
+  border: 1px solid red;
+}

@@ -1,0 +1,32 @@
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.menu__products {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 350px));
+  gap: 35px 45px;
+  justify-items: center;
+  justify-content: first baseline;
+}
+
+.not-items {
+  text-align: center;
+  font-weight: 300;
+  font-size: 31px;
+  line-height: 120%;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+
+  font-weight: 300;
+  font-size: 31px;
+  line-height: 120%;
+}

@@ -1,0 +1,38 @@
+.summary_item {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 10px;
+}
+
+.border {
+  border-bottom: 1px solid #F1F2F3;
+}
+
+.summary_item-header {
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.summary_item-price {
+  font-size: 19px;
+  line-height: 100%;
+}
+
+.ruble {
+  font-size: 14px;
+  line-height: 100%;
+  color: #9796A1;
+
+  padding-left: 5px;
+}
+
+.count {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+
+  color: #BEBEBE;
+
+  padding-left: 10px;
+}

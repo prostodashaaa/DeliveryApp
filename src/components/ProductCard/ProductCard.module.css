@@ -1,0 +1,125 @@
+.link-product-card {
+  text-decoration: none;
+  width: min-content;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+
+  position: relative;
+
+  border-radius: 18px;
+  box-shadow: 0 20px 36.43px 0px #D3D1D840;
+
+  transition: all 0.3s;
+}
+
+.product-card__image {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card__image img {
+  border-radius: 18px;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  aspect-ratio: 323 / 165;
+}
+
+.product-card__price {
+  position: absolute;
+  top: 12px;
+  left: 13px;
+
+  max-height: 34px;
+  padding: 4px 14px;
+
+  font-size: 20px;
+  line-height: 27.24px;
+
+  background-color: var(--white);
+  border-radius: 121.5px;
+  color: #111719;
+}
+
+.ruble {
+  padding-left: 3px;
+  color: var(--orange);
+}
+
+.add-cart {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  max-height: 34px;
+  padding: 7px 9px 8px 9px;
+
+  box-shadow: 0px 8.5px 18.21px 0px #FE724C66;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 50%;
+
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.add-cart img {
+  background-color: transparent;
+}
+
+.add-cart:hover {
+  background-color: var(--orange-hover);
+}
+
+.product-card__rating {
+  position: absolute;
+  top: 151px;
+  left: 13px;
+
+  padding: 6px 9px;
+
+  font-weight: 600;
+  font-size: 12.14px;
+  line-height: 16.54px;
+
+  box-shadow: 0px 6.07px 24.29px 0px #FE724C33;
+  background-color: var(--white);
+  border-radius: 136px;
+}
+
+.product-card__rating img {
+  padding-left: 4px;
+}
+
+.product-card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 19px 13px;
+
+  border-radius: 0 0 18px 18px;
+}
+
+.description__title {
+  font-weight: 600;
+  font-size: 18.21px;
+  line-height: 24.8px;
+}
+
+.description__composition {
+  font-size: 14.57px;
+  line-height: 19.84px;
+
+  color: #5B5B5E;
+}
+
+.product-card:hover   {
+  box-shadow: 0 20px 40px 0px #7e7d8140;
+}

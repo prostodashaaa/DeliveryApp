@@ -1,0 +1,40 @@
+.cart__header {
+  margin-bottom: 30px;
+}
+
+.cart__items {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+
+  width: 75%;
+}
+
+.cart__summary {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart_button {
+  margin-top: 40px;
+  width:max-content;
+
+  align-self: center;
+}
+
+.not-cart {
+  text-align: center;
+  font-weight: 300;
+  font-size: 31px;
+  line-height: 120%;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+
+  font-weight: 300;
+  font-size: 31px;
+  line-height: 120%;
+}

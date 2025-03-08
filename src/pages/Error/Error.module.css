@@ -1,0 +1,10 @@
+.error {
+  display: flex;
+  justify-content: center;
+
+  padding: 140px;
+
+  font-weight: 300;
+  font-size: 31px;
+  line-height: 120%;
+}

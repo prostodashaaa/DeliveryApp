@@ -1,0 +1,33 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --grey: #9EA1B1;
+  --orange: #FE724C;
+  --orange-hover: #d86545;
+  --placeholder: #C4C4C4;
+
+  --font-family: "Open Sans", serif;
+  --font-weight-bold: 600;
+  --border-color: #EEEEEE;
+}
+
+* {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}

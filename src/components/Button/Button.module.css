@@ -1,0 +1,31 @@
+.button {
+  background-color: var(--orange);
+  color: var(--white);
+  box-shadow: 0px 10px 40px 0px #7A81BE29;
+
+  border-radius: 28.5px;
+  border: none;
+
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--orange-hover);
+}
+
+.small {
+  font-size: 16px;
+  line-height: 21.79px;
+
+  padding: 10px 25px;
+}
+
+.big {
+  font-size: 15px;
+  line-height: 20.43px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  padding: 20px 5%;
+}

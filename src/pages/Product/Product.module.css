@@ -1,0 +1,49 @@
+.product__section {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.product__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_left {
+  display: flex;
+  gap: 36px;
+}
+
+.button_back {
+  width: 38px;
+  border: none;
+
+  cursor: pointer;
+}
+
+.button_add {
+  display: flex;
+}
+
+.button_add img {
+  background-color: transparent;
+  align-self: center;
+
+  padding-right: 14px;
+}
+
+.product__main {
+  display: flex;
+  gap: 50px;
+}
+
+.product__image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 18.21px;
+}
+
+.product__description {
+  display: flex;
+  flex-direction: column;
+}
