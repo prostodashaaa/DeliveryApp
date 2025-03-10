@@ -10,8 +10,9 @@ import { useEffect } from "react";
 export function Layout() {
   const navigate = useNavigate();
   const dispatch = useDispatch<AppDispatch>();
-  const items = useSelector((s: RootState) => s.cart.items);
   const profile = useSelector((s: RootState) => s.user.profile);
+  const activeUser = useSelector((s: RootState) => s.cart.users.find(user => user.email == profile?.email));
+  const items = activeUser?.items ? activeUser.items : [];
 
   const logout = () => {
     dispatch(userActions.logout());

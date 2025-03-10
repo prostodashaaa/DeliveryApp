@@ -20,8 +20,12 @@ export function Cart() {
   const [cartProducts, setCartProducts] = useState<IProduct[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | undefined>();
-  const items = useSelector((s: RootState) => s.cart.items);
   const jwt = useSelector((s: RootState) => s.user.jwt);
+  const profile = useSelector((s: RootState) => s.user.profile);
+  const activeUser = useSelector((s: RootState) =>
+    s.cart.users.find((user) => user.email == profile?.email)
+  );
+  const items = activeUser?.items ? activeUser.items : [];
   const navigate = useNavigate();
   const dispatch = useDispatch<AppDispatch>();
 
@@ -79,13 +83,17 @@ export function Cart() {
         headers: { Authorization: `Bearer ${jwt}` },
       }
     );
-    dispatch(cartActions.clean());
-    navigate("/success");
+    if (profile) {
+      dispatch(cartActions.clean(profile.email));
+      navigate("/success");
+    }
   };
 
   useEffect(() => {
-    loadAllItems();
-  }, [items]);
+    if (cartProducts.length === 0) {
+      loadAllItems();
+    }
+  }, []);
 
   return (
     <>

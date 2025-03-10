@@ -1,26 +1,28 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { CartItemProps } from "./CartItem.props";
-import { AppDispatch } from "../../store/store";
+import { AppDispatch, RootState } from "../../store/store";
 import classNames from "classnames";
 import styles from "./CartItem.module.css";
 import { cartActions } from "../../store/cart.slice";
 
 function CartItem(props: CartItemProps) {
   const dispatch = useDispatch<AppDispatch>();
+  const userActive = useSelector((s: RootState) => s.user.profile);
+  const profile = userActive ? userActive.email : "";
 
   const increase = () => {
-    dispatch(cartActions.add(props.id));
+    dispatch(cartActions.add({ id: props.id, email: profile }));
   };
 
   const descrease = () => {
-    dispatch(cartActions.remove(props.id));
+    dispatch(cartActions.remove({ id: props.id, email: profile }));
     if (props.count == 1) {
-      dispatch(cartActions.delete(props.id));
+      dispatch(cartActions.delete({ id: props.id, email: profile }));
     }
   };
 
   const remove = () => {
-    dispatch(cartActions.delete(props.id));
+    dispatch(cartActions.delete({ id: props.id, email: profile }));
   };
 
   return (

@@ -3,16 +3,19 @@ import styles from "./ProductCard.module.css";
 import { ProductCardProps } from "./ProductCard.props";
 import { Link } from "react-router-dom";
 import { MouseEvent } from "react";
-import { useDispatch } from "react-redux";
-import { AppDispatch } from "../../store/store";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "../../store/store";
 import { cartActions } from "../../store/cart.slice";
 
 function ProductCard(props: ProductCardProps) {
   const dispatch = useDispatch<AppDispatch>();
+  const profile = useSelector((s: RootState) => s.user.profile);
 
   const add = (e: MouseEvent) => {
     e.preventDefault();
-    dispatch(cartActions.add(props.id));
+    if (profile) {
+      dispatch(cartActions.add({ id: props.id, email: profile.email }));
+    }
   };
 
   return (
